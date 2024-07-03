@@ -25,9 +25,9 @@ The Simple To-Do List app allows users to add, remove, and mark tasks as complet
 - Mark tasks as completed.
 - Remove tasks from the list.
 
-<!-- ## Demo
+## Demo
 
-Check out the live demo of the application [here](link-to-live-demo). -->
+Check out the live demo of the application [here](https://to-do-list-three-lake.vercel.app/).
 
 ## Getting Started
 
