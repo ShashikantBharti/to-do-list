@@ -47,6 +47,11 @@ const TodoItem = ({
 
   const getPriorities = () => {
     let options = [];
+    options.push(
+      <option key='0' value='0'>
+        0
+      </option>
+    );
     for (let i = 1; i <= priority; i++) {
       if (hasPriority(i)) continue;
       options.push(
@@ -84,7 +89,6 @@ const TodoItem = ({
         Priority{' '}
         <select onChange={setOrder}>
           <option>{todo.priority}</option>
-          <option value='0'>0</option>
           {getPriorities()}
         </select>
         <button title='Edit Item' onClick={editTodo}>
