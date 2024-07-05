@@ -72,7 +72,7 @@ function App() {
       />
       <div className='container'>
         <p>
-          Total Todos : <strong>{totalTodos}</strong> | Completed :
+          Total : <strong>{totalTodos}</strong> | Completed :
           <strong> {completed}</strong> | Deleted : <strong>{deleted}</strong>
         </p>
         <div className='todoList'>

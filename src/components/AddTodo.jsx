@@ -5,6 +5,7 @@ const AddTodo = ({ addTodo, oldValue, setOldValue, update, updateTodo }) => {
 
   return (
     <div className='todoForm'>
+      <h1>To Do List</h1>
       <form onSubmit={update ? updateTodo : addTodo}>
         <input
           type='text'

@@ -1,5 +1,6 @@
 import { MdDelete } from 'react-icons/md';
 import { FaEdit } from 'react-icons/fa';
+import { HiDotsVertical } from 'react-icons/hi';
 
 const TodoItem = ({
   todo,
@@ -85,9 +86,12 @@ const TodoItem = ({
         />
         <p className={todo.isComplete ? 'completed' : ''}>{todo.value}</p>
       </div>
+      {/* <a href='javascrip:void(0)' className='dropdown'>
+        <HiDotsVertical />
+      </a> */}
       <div className='cta'>
         Priority{' '}
-        <select onChange={setOrder}>
+        <select className='selectPriority' onChange={setOrder}>
           <option>{todo.priority}</option>
           {getPriorities()}
         </select>

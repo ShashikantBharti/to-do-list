@@ -5,11 +5,38 @@
 }
 
 .todoForm {
-  display: flex;
   background-color: #50b4d8;
-  min-height: 140px;
+  padding: 50px 100px;
+}
+
+.selectPriority {
+  width: 100%;
+  padding: 4px;
+  font-size: 18px;
+}
+
+.dropdown {
+  display: none;
+  height: 40px;
+  width: 40px;
+  border-radius: 40px;
   justify-content: center;
   align-items: center;
+  background: white;
+}
+
+.dropdown:hover {
+  box-shadow: 1px 1px 10px #ccc;
+}
+
+@media only screen and (max-width: 475px) {
+  .todoForm {
+    padding: 50px 20px;
+  }
+}
+
+.todoForm form {
+  display: flex;
 }
 
 .todoForm input {
@@ -18,7 +45,7 @@
   padding: 5px 10px;
   border: 1px solid black;
   border-radius: 4px 0 0 4px;
-  width: 400px;
+  width: 100%;
 }
 
 button {
@@ -83,4 +110,8 @@ input[type='checkbox'] {
 .cta {
   display: flex;
   gap: 10px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  align-items: center;
+  box-shadow: 1px 1px 10px #ccc;
 }
